@@ -1,4 +1,4 @@
 #!/bin/bash
-source ../Github.sh
+source ./Applications/Github.sh
 
 installGitHubReleasedPackage https://api.github.com/repos/obsidianmd/obsidian-releases/releases
