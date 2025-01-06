@@ -1,6 +1,6 @@
 #!/bin/bash
 apt update && apt install -y git
-#git clone https://github.com/johnnycederholm/Linux.git
+git clone https://github.com/johnnycederholm/Linux.git
 
 scripts=(
     ./Linux/*.sh
