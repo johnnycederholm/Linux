@@ -6,3 +6,5 @@ makeScriptsExecutable
 
 ./Apply-configuration.sh
 ./Install-home-applications.sh
+
+reboot

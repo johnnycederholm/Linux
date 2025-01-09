@@ -1,5 +1,5 @@
 #!/bin/bash
-source ./Applications/Versions.sh
+source ./Scripts/Applications/Versions.sh
 
 echo "Install Slack..."
 

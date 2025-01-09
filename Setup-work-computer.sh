@@ -6,3 +6,5 @@ makeScriptsExecutable
 
 ./Apply-configuration.sh
 ./Install-work-applications.sh
+
+reboot

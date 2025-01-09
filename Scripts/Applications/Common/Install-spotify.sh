@@ -1,5 +1,4 @@
 #!/bin/bash
-
 echo "Install Spotify..."
 
 curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
