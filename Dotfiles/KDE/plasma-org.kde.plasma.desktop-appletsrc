@@ -11,7 +11,7 @@ activityId=
 formfactor=2
 immutability=1
 lastScreen=0
-location=3
+location=4
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
 
@@ -51,6 +51,7 @@ DialogWidth=720
 
 [Containments][100][Applets][103][Configuration][General]
 iconSpacing=0
+launchers=applications:systemsettings.desktop,preferred://browser
 
 [Containments][100][Applets][104]
 immutability=1
@@ -65,12 +66,16 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][100][Applets][105][Configuration]
-PreloadWeight=85
+PreloadWeight=100
 SystrayContainmentId=106
 
 [Containments][100][Applets][118]
 immutability=1
 plugin=org.kde.plasma.digitalclock
+
+[Containments][100][Applets][118][Configuration]
+popupHeight=450
+popupWidth=350
 
 [Containments][100][Applets][118][Configuration][Appearance]
 autoFontAndSize=false
@@ -107,7 +112,7 @@ activityId=
 formfactor=2
 immutability=1
 lastScreen=0
-location=3
+location=4
 plugin=org.kde.plasma.private.systemtray
 popupHeight=432
 popupWidth=432
@@ -159,9 +164,15 @@ plugin=org.kde.plasma.vault
 immutability=1
 plugin=org.kde.kscreen
 
+[Containments][106][Applets][116][Configuration]
+PreloadWeight=55
+
 [Containments][106][Applets][117]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
+
+[Containments][106][Applets][117][Configuration]
+PreloadWeight=55
 
 [Containments][106][Applets][120]
 immutability=1
@@ -182,7 +193,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][106][Applets][122][Configuration]
-PreloadWeight=55
+PreloadWeight=60
 
 [Containments][106][Applets][123]
 immutability=1
@@ -203,9 +214,18 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][106][General]
-extraItems=org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement,org.kde.kupapplet,org.kde.plasma.vault,org.kde.kscreen,org.kde.plasma.devicenotifier,firewall-applet
+extraItems=org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement,org.kde.kupapplet,org.kde.plasma.vault,org.kde.kscreen,org.kde.plasma.devicenotifier
 knownItems=org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.clipboard,org.kde.plasma.bluetooth,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement,org.kde.kupapplet,org.kde.plasma.vault,org.kde.kscreen,org.kde.plasma.devicenotifier
 shownItems=firewall-applet
+
+[Containments][132]
+activityId=c7027dd5-df1b-4d65-87aa-b6a966864815
+formfactor=0
+immutability=1
+lastScreen=1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
 
 [Containments][99]
 ItemGeometries-2560x1600=
@@ -224,7 +244,7 @@ DialogWidth=2560
 
 [Containments][99][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=879
+ToolBoxButtonX=764
 
 [Containments100Appletsts][103][Configuration][General]
 launchers=

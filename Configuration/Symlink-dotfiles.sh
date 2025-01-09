@@ -1,5 +1,14 @@
 #!/bin/bash
-ln -s -f ~/Linux/Dotfiles/KDE/plasma-org.kde.plasma.desktop-appletsrc ~/.config/plasma-org.kde.plasma.desktop-appletsrc
-ln -s -f ~/Linux/Dotfiles/KDE/dolphinrc ~/.config/dolphinrc
-ln -s -f ~/Linux/Dotfiles/KDE/kdeglobals ~/.config/kdeglobals
-ln -s -f ~/Linux/Dotfiles/KDE/kglobalshortcutsrc ~/.config/kglobalshortcutsrc
+kdeDotfiles=(
+    dolphinrc
+    kdeglobals
+    kglobalshortcutsrc
+    kwinrc
+    mimeapps.list
+    plasma-org.kde.plasma.desktop-appletsrc
+    plasmashellrc
+)
+
+for dotfile in "${kdeDotfiles[@]}";do
+    ln -s -f ~/Linux/Dotfiles/KDE/${dotfile} ~/.config/${dotfile}
+done
