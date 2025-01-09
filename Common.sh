@@ -7,3 +7,10 @@ makeScriptsExecutable() {
 reboot () { 
     echo 'Reboot? (y/n)' && read x && [[ "$x" == "y" ]] && /sbin/reboot; 
 }
+
+info () {
+    NC='\033[0m'
+    Green='\033[0;32m'
+
+    echo -e "${Green}$1${NC}"
+}

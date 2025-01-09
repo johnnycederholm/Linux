@@ -1,5 +1,7 @@
 #!/bin/bash
-echo "Adding Debian FastTrack repositories..."
+source ./Common.sh
+
+info "Adding Debian FastTrack repositories..."
 
 codename=$(lsb_release --codename --short)
 apt install -y fasttrack-archive-keyring
