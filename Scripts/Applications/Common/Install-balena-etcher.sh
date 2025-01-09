@@ -1,5 +1,5 @@
 #!/bin/bash
-source ./Applications/Github.sh
+source ./Scripts/Applications/Github.sh
 
 echo "Install Balena Etcher..."
 
