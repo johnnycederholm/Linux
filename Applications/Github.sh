@@ -1,6 +1,6 @@
 installGitHubReleasedPackage() {
     file=$(downloadLatestGitHubRelease $1)
-    apt install "$PWD/$file"
+    apt install -y "$PWD/$file"
     rm -f "$PWD/$file"
 }
 
