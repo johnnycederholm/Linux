@@ -1,6 +1,8 @@
 [Added Associations]
+inode/directory=code.desktop;
 text/plain=code.desktop;
 
 [Default Applications]
+inode/directory=code.desktop;
 text/html=google-chrome.desktop
 text/plain=code.desktop;

@@ -1,6 +1,7 @@
 #!/bin/bash
 kdeDotfiles=(
     dolphinrc
+    filetypesrc
     kdeglobals
     kglobalshortcutsrc
     konsolerc
