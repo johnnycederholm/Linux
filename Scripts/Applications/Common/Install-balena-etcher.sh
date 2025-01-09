@@ -1,6 +1,7 @@
 #!/bin/bash
+source ./Common.sh
 source ./Scripts/Applications/Github.sh
 
-echo "Install Balena Etcher..."
+info "Install Balena Etcher..."
 
 installGitHubReleasedPackage https://api.github.com/repos/balena-io/etcher/releases

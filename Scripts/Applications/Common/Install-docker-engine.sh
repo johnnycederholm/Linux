@@ -1,5 +1,7 @@
 #!/bin/bash
-echo "Install Docker Engine..."
+source ./Common.sh
+
+info "Install Docker Engine..."
 
 # Add Docker's official GPG key:
 apt update

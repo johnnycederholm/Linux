@@ -1,4 +1,6 @@
 #!/bin/bash
+source ./Common.sh
+
 kdeDotfiles=(
     dolphinrc
     filetypesrc
@@ -11,7 +13,7 @@ kdeDotfiles=(
     plasmashellrc
 )
 
-echo "Symlink dotfiles..."
+info "Symlink dotfiles..."
 
 for dotfile in "${kdeDotfiles[@]}";do
     ln -s -f ~/Linux/Dotfiles/KDE/${dotfile} ~/.config/${dotfile}

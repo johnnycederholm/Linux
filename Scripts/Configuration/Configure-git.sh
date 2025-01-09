@@ -1,5 +1,7 @@
 #!/bin/bash
-echo "Configure Git"
+source ./Common.sh
+
+info "Configure Git"
 read -p "Name: " username
 read -p "Email: " email
 

@@ -1,4 +1,6 @@
 #!/bin/bash
-echo "Install Flameshoot..."
+source ./Common.sh
+
+info "Install Flameshoot..."
 
 apt install -y flameshot

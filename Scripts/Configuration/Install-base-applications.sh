@@ -1,4 +1,6 @@
 #!/bin/bash
+source ./Common.sh
+
 applications=(
     jq
     yq
@@ -7,7 +9,7 @@ applications=(
     shellcheck
 )
 
-echo "Installing base applications..."
+info "Installing base applications..."
 
 apt update 
 

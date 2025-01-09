@@ -1,10 +1,11 @@
 #!/bin/bash
+source ./Common.sh
 
 applications=(
     firefox-esr
 )
 
-echo "Uninstall applications"
+info "Uninstall applications"
 
 for application in "${applications[@]}";do
     apt remove -y ${application}

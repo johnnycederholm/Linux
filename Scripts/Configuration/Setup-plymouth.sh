@@ -1,5 +1,7 @@
 #!/bin/bash
-echo "Set up Plymouth"
+source ./Common.sh
+
+info "Set up Plymouth"
 
 apt install -y plymouth plymouth-themes firmware-linux fonts-cantarell
 

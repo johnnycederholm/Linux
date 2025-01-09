@@ -1,5 +1,6 @@
 #!/bin/bash
+source ./Common.sh
 source ./Scripts/Applications/Github.sh
 
-echo "Install PowerShell Core"
+info "Install PowerShell Core"
 installGitHubReleasedPackage https://api.github.com/repos/PowerShell/PowerShell/releases

@@ -1,4 +1,6 @@
 #!/bin/bash
-echo "Install firewall..."
+source ./Common.sh
+
+info "Install firewall..."
 
 apt install -y nftables firewalld firewall-config firewall-applet
