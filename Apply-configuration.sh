@@ -3,6 +3,7 @@ source ./Common.sh
 
 scripts=(
     ./Configuration/*.sh
+    ./Configuration/*.ps1
 )
 
 for file in "${scripts[@]}";do
@@ -10,7 +11,5 @@ for file in "${scripts[@]}";do
         ${file}
     fi
 done
-
-
 
 reboot
