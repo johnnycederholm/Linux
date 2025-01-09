@@ -11,6 +11,6 @@ echo "Installing base applications..."
 
 apt update 
 
-for application in "${applications[@]}";then
+for application in "${applications[@]}";do
     apt install -y ${application}
 done
