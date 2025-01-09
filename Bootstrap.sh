@@ -1,10 +1,15 @@
 #!/bin/bash
-apt update && apt install -y git
+sudo apt update && apt install -y git
 git clone https://github.com/johnnycederholm/Linux.git
 
 scripts=(
-    ./Linux/*.sh
+    ./Linux/**/*.sh
+    ./Linux/**/*.ps1
 )
+
+# Enable expansion of subdirectories
+# by using the ** glob pattern
+shopt -s globstar
 
 echo "Make scripts executable..."
 for file in "${scripts[@]}";do
