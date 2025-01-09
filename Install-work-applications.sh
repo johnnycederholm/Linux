@@ -11,5 +11,3 @@ for file in "${scripts[@]}";do
         ${file}
     fi
 done
-
-reboot
