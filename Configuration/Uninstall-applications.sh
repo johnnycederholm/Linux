@@ -6,7 +6,7 @@ applications=(
 
 echo "Uninstall applications"
 for application in "${applications[@]}";do
-    apt remove ${application}
+    apt remove -y ${application}
 done
 
 apt autoremove
