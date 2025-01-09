@@ -267,6 +267,7 @@ activate widget 100=none,none,Activate Panel Widget
 activate widget 101=none,none,Activate Application Launcher Widget
 activate widget 103=none,none,Activate Icons-only Task Manager Widget
 activate widget 104=none,none,Activate Margins Separator Widget
+activate widget 133=Ctrl+Alt+D,none,Activate Peek at Desktop Widget
 activate widget 3=Alt+F1,none,Activate Application Launcher Widget
 activate widget 77=none,none,Activate Application Launcher Widget
 clear-history=none,,Clear Clipboard History

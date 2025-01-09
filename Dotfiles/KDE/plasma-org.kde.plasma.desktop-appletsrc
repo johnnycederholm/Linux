@@ -97,12 +97,26 @@ plugin=org.kde.plasma.marginsseparator
 immutability=1
 plugin=org.kde.plasma.marginsseparator
 
+[Containments][100][Applets][133]
+immutability=1
+plugin=org.kde.plasma.minimizeall
+
+[Containments][100][Applets][133][Configuration]
+PreloadWeight=55
+
+[Containments][100][Applets][133][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][100][Applets][133][Shortcuts]
+global=Ctrl+Alt+D
+
 [Containments][100][ConfigDialog]
 DialogHeight=84
 DialogWidth=2560
 
 [Containments][100][General]
-AppletOrder=101;104;103;131;105;129;118
+AppletOrder=101;104;103;131;105;129;118;133
 
 [Containments][100][Shortcuts]
 global=
