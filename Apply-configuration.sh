@@ -2,13 +2,15 @@
 source ./Common.sh
 
 scripts=(
-    ./Configuration/*
+    ./Configuration/*.sh
 )
 
 for file in "${scripts[@]}";do
     if [ -f $file ]; then
-        /bin/bash ${file}
+        ${file}
     fi
 done
+
+
 
 reboot
