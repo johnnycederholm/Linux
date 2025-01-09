@@ -1,9 +1,13 @@
 #!/bin/bash
 echo "Generate SSH keys"
-read -p "Enter email: " email
 
-ssh-keygen -t rsa -b 4096 -C ${email}
-ssh-keygen -t ed25519 -C ${email}
+if [ ! -f "$HOME/.ssh/id_rsa" ];then
+    ssh-keygen -t rsa -f "$HOME/.ssh/id_rsa" -q -N "" -b 4096 -C "$(hostname)"
+fi
 
-ssh-add ~/.ssh/id_rsa
-ssh-add ~/.ssh/id_ed25519
+if [ ! -f "$HOME/.ssh/id_ed25519" ];then
+    ssh-keygen -t ed25519 -f "$HOME/.ssh/id_ed25519" -q -N "" -C "$(hostname)"
+fi
+
+ssh-add "$HOME/.ssh/id_rsa"
+ssh-add "$HOME/.ssh/id_ed25519"
