@@ -1,2 +1,2 @@
 #!/bin/bash
-apt update && apt install -f jq yq curl gpg
+apt update && apt install -y jq yq curl gpg
