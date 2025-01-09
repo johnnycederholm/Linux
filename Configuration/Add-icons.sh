@@ -1,2 +1,2 @@
 #!/bin/bash
-tar xzf Icons/Papirus.tar.gz -C ~/.local/share/icons/
+tar xzf ~/Linux/Icons/Papirus.tar.gz -C ~/.local/share/icons/

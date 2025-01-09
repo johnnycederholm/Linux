@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Copy fonts
-cp -r Fonts/ ~/.fonts
+cp -r ~/Linux/Fonts/ ~/.fonts
 
 # Rebuild font cache
 fc-cache -f
