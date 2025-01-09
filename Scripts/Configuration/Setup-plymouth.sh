@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "Set up Plymouth"
+
 apt install -y plymouth plymouth-themes firmware-linux fonts-cantarell
 
 # Deploy Plymouth theme

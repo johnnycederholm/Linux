@@ -2,8 +2,8 @@
 source ./Common.sh
 
 scripts=(
-    ./Configuration/*.sh
-    ./Configuration/*.ps1
+    ./Scripts/Configuration/*.sh
+    ./Scripts/Configuration/*.ps1
 )
 
 for file in "${scripts[@]}";do

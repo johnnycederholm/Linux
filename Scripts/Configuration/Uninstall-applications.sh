@@ -5,6 +5,7 @@ applications=(
 )
 
 echo "Uninstall applications"
+
 for application in "${applications[@]}";do
     apt remove -y ${application}
 done

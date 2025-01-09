@@ -1,5 +1,8 @@
 installGitHubReleasedPackage() {
     file=$(downloadLatestGitHubRelease $1)
+
+    echo "Installing $file"
+
     apt install -y "$PWD/$file"
     rm -f "$PWD/$file"
 }
@@ -7,6 +10,7 @@ installGitHubReleasedPackage() {
 downloadLatestGitHubRelease() {
     url=$(latestGitHubRelease $1)
     file=$(basename $url)
+
     wget -qO- $url > ${file}
     echo $file
 }

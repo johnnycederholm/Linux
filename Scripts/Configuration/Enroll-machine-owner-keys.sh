@@ -1,10 +1,11 @@
 secureBootState=$(mokutil --sb-state)
 mokLocation="/var/lib/shim-signed/mok/"
 
+echo "Enroll Machine Owner Key (MOK)..."
+
 if [ "$secureBootState" == "SecureBoot enabled" ]; then
     apt install -y dkms
     
-    echo "Enroll Machine Owner Key (MOK)"
     mokutil --import /var/lib/dkms/mok.pub
 
     if [ ! -d "$mokLocation" ]; then
@@ -17,9 +18,10 @@ if [ "$secureBootState" == "SecureBoot enabled" ]; then
     openssl x509 -inform der -in MOK.der -out MOK.pem
     popd
 
-    echo "Enroll Machine Owner Key (MOK)"
     mokutil --import "${mokLocation}MOK.der"
 
     echo "mok_signing_key=\"${mokLocation}MOK.priv\"" | tee -a /etc/dkms/framework.conf
     echo "mok_certificate=\"${mokLocation}MOK.der\"" | tee -a /etc/dkms/framework.conf
+else
+    echo "SecureBoot not enabled. Skipping..."
 fi

@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Generate SSH keys"
+echo "Generate SSH keys..."
 
 if [ ! -f "$HOME/.ssh/id_rsa" ];then
     ssh-keygen -t rsa -f "$HOME/.ssh/id_rsa" -q -N "" -b 4096 -C "$(hostname)"

@@ -11,6 +11,8 @@ kdeDotfiles=(
     plasmashellrc
 )
 
+echo "Symlink dotfiles..."
+
 for dotfile in "${kdeDotfiles[@]}";do
     ln -s -f ~/Linux/Dotfiles/KDE/${dotfile} ~/.config/${dotfile}
 done

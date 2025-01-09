@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "Install Kubectl..."
+
 apt-get update
 apt-get install -y apt-transport-https ca-certificates curl gnupg
 

@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "Install Docker Engine..."
+
 # Add Docker's official GPG key:
 apt update
 apt install ca-certificates curl

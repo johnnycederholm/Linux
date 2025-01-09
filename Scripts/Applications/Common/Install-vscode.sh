@@ -1,4 +1,6 @@
 #!/bin/bash
-apt install apt-transport-https
+echo "Install VS Code..."
+
+apt install -y apt-transport-https
 apt update
-apt install code
+apt install -y code
