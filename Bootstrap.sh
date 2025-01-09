@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt update && apt install -y git
+sudo apt update && sudo apt install -y git
 git clone https://github.com/johnnycederholm/Linux.git
 
 scripts=(
