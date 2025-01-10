@@ -4,16 +4,16 @@ PreloadWeight=0
 [PlasmaViews][Panel 100]
 alignment=132
 floating=0
-panelVisibility=1
+panelVisibility=0
 
 [PlasmaViews][Panel 100][Defaults]
-maxLength=2548
-minLength=850
-thickness=48
+maxLength=2560
+minLength=2560
+thickness=28
 
 [PlasmaViews][Panel 100][Horizontal2560]
-maxLength=2548
-minLength=850
+maxLength=2560
+minLength=2560
 
 [PlasmaViews][Panel 2][Defaults]
 thickness=44

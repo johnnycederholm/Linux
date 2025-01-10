@@ -11,7 +11,7 @@ activityId=
 formfactor=2
 immutability=1
 lastScreen=0
-location=4
+location=3
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
 
@@ -126,7 +126,7 @@ activityId=
 formfactor=2
 immutability=1
 lastScreen=0
-location=4
+location=3
 plugin=org.kde.plasma.private.systemtray
 popupHeight=432
 popupWidth=432
@@ -135,6 +135,9 @@ wallpaperplugin=org.kde.image
 [Containments][106][Applets][107]
 immutability=1
 plugin=org.kde.plasma.notifications
+
+[Containments][106][Applets][107][Configuration]
+PreloadWeight=55
 
 [Containments][106][Applets][108]
 immutability=1
@@ -166,6 +169,9 @@ plugin=org.kde.plasma.keyboardlayout
 immutability=1
 plugin=org.kde.plasma.clipboard
 
+[Containments][106][Applets][113][Configuration]
+PreloadWeight=55
+
 [Containments][106][Applets][114]
 immutability=1
 plugin=org.kde.plasma.printmanager
@@ -193,7 +199,7 @@ immutability=1
 plugin=org.kde.plasma.nightcolorcontrol
 
 [Containments][106][Applets][120][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][106][Applets][121]
 immutability=1
@@ -242,6 +248,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][99]
+ItemGeometries-2560x1440=
 ItemGeometries-2560x1600=
 ItemGeometriesHorizontal=
 activityId=c7027dd5-df1b-4d65-87aa-b6a966864815
@@ -259,6 +266,7 @@ DialogWidth=2560
 [Containments][99][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=764
+ToolBoxButtonY=28
 
 [Containments100Appletsts][103][Configuration][General]
 launchers=
